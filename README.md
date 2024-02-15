@@ -4,7 +4,11 @@
 
 ## Introduction
 
-This project is an institutional portal developed for an air traffic control unit, including a control tower and a radar approach control module. The portal provides real-time information and statistics about air traffic, flight status, radar data, and more. It is built using Laravel/PHP for the backend, SQLite for the database, and Vue.js for the frontend.
+This project is an institutional portal developed for an air traffic control unit, including a control tower and a radar approach control module. The portal simulates real-time information and statistics about air traffic, flight status, radar data, and more. It is built using Laravel/PHP for the backend, SQLite for the database, and Vue.js for the frontend.
+
+## History
+
+This idea was based on my experience working as an Air Traffic Controller from 1994 to 2013. During this period, in addition to my normal responsibilities, I worked on IT projects such as website building, process automation, and data analysis. This project is the outcome of my experience in air traffic control, as well as my interest in information technology and processes.
 
 ## Features
 
@@ -24,26 +28,16 @@ This project is an institutional portal developed for an air traffic control uni
 -   **Charts and Graphs:** Chart.js
 -   **UI Framework:** Bootstrap or Tailwind CSS
 
-## Project Structure
-
--   **`/backend`:** Laravel backend project.
--   **`/frontend`:** Vue.js frontend project.
--   **`/docs`:** Documentation folder.
--   **`/mock_data`:** Mock data generation scripts.
-
 ## Installation and Setup
 
 1. Clone the repository: `git clone https://github.com/your-username/air-traffic-control-portal.git`
 2. Set up the backend:
-    - Navigate to the `/backend` directory.
     - Install dependencies: `composer install`
     - Set up the `.env` file with database credentials.
     - Run migrations: `php artisan migrate`
     - Start the backend server: `php artisan serve`
 3. Set up the frontend:
-    - Navigate to the `/frontend` directory.
     - Install dependencies: `npm install`
-    - Start the development server: `npm run serve`
 4. Access the application at `http://localhost:8080` in your web browser.
 
 ## Usage
