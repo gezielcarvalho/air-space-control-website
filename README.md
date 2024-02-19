@@ -1,6 +1,6 @@
 # Institutional Portal for Air Traffic Control Unit
 
-![Air Traffic Control](./public/assets/images/atc.png)
+![Air Traffic Control Portal](./public/assets/images/atc.png)
 
 ## Introduction
 
