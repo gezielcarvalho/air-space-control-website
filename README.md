@@ -1,6 +1,6 @@
 # Institutional Portal for Air Traffic Control Unit
 
-![Air Traffic Control](./public/assets/images/atc.png)
+![Air Traffic Control Portal](./public/assets/images/atc.png)
 
 ## Introduction
 
@@ -57,6 +57,12 @@ Originally, the project was **developed in 2003** using PHP, MySQL, and JavaScri
 ## Documentation
 
 Detailed documentation on setting up and running the project, API endpoints, authentication mechanisms, and more can be found in the `/docs` folder.
+
+## References
+
+1. [Laravel Documentation](https://laravel.com/docs)
+2. [Vue.js Documentation](https://vuejs.org/v2/guide/)
+3. [Vue 3 in Laravel 10 with Vite](https://medium.com/@DevMahmoudAdel/how-to-install-vue-3-in-laravel-10-with-vite-5c7749afd29c)
 
 ## Contributing
 
