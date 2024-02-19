@@ -1,6 +1,6 @@
 # Institutional Portal for Air Traffic Control Unit
 
-![Air Traffic Control](https://example.com/air-traffic-control-image.jpg)
+![Air Traffic Control](./public/assets/images/atc.png)
 
 ## Introduction
 
@@ -8,18 +8,25 @@ This project is an institutional portal developed for an air traffic control uni
 
 ## History
 
-This idea was based on my experience working as an Air Traffic Controller from 1994 to 2013. During this period, in addition to my normal responsibilities, I worked on IT projects such as website building, process automation, and data analysis. This project is the outcome of my experience in air traffic control, as well as my interest in information technology and processes.
+This project was based on my experience working as an Air Traffic Controller from 1994 to 2013. During this period, in addition to my normal responsibilities, I worked on IT projects such as website building, process automation, and data analysis. This project is the outcome of my experience in air traffic control, as well as my interest in information technology and processes.
 
 ## Features
 
--   **Dashboard:** Display key statistics and information about air traffic.
--   **Control Tower Module:** View and update flight information for arrivals and departures.
--   **Radar Approach Control Module:** Track aircraft movement in the airspace and provide alerts for potential conflicts.
+In the original project, the following features were implemented:
+
+-   **Landing Page:** Display key statistics and information about the ACT facility.
 -   **User Authentication and Authorization:** Secure login system with role-based access control.
--   **Data Mocking:** Mock flight data for demonstration purposes.
 -   **Reporting:** Generate reports on air traffic patterns, incidents, and operational statistics.
 
+In this versions, I decided to add the following:
+
+-   **Control Tower Module:** View and update flight information for arrivals and departures.
+-   **Radar Approach Control Module:** Track aircraft movement in the airspace and provide alerts for potential conflicts.
+-   **Data Mocking:** Mock flight data for demonstration purposes.
+
 ## Technologies Used
+
+Originally, the project was **developed in 2003** using PHP, MySQL, and JavaScript. However, I have decided to update the project to use the following technologies:
 
 -   **Backend:** Laravel/PHP, SQLite
 -   **Frontend:** Vue.js, Vuex
