@@ -58,6 +58,12 @@ Originally, the project was **developed in 2003** using PHP, MySQL, and JavaScri
 
 Detailed documentation on setting up and running the project, API endpoints, authentication mechanisms, and more can be found in the `/docs` folder.
 
+## References
+
+1. [Laravel Documentation](https://laravel.com/docs)
+2. [Vue.js Documentation](https://vuejs.org/v2/guide/)
+3. [Vue 3 in Laravel 10 with Vite](https://medium.com/@DevMahmoudAdel/how-to-install-vue-3-in-laravel-10-with-vite-5c7749afd29c)
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
