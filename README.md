@@ -63,6 +63,7 @@ Detailed documentation on setting up and running the project, API endpoints, aut
 1. [Laravel Documentation](https://laravel.com/docs)
 2. [Vue.js Documentation](https://vuejs.org/v2/guide/)
 3. [Vue 3 in Laravel 10 with Vite](https://medium.com/@DevMahmoudAdel/how-to-install-vue-3-in-laravel-10-with-vite-5c7749afd29c)
+4. [Tailwind Vite and Laravel](https://chipperci.com/news/vite-tailwind-laravel)
 
 ## Contributing
 

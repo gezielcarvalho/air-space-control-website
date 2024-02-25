@@ -1,3 +1,3 @@
 <template>
-    <h1>Vue 3 in Laravel 10</h1>
+    <h1 class="bg-slate-300">Vue 3 in Laravel 10 Tailwind</h1>
 </template>
