@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This project is an institutional portal developed for an air traffic control unit, including a control tower and a radar approach control module. The portal simulates real-time information and statistics about air traffic, flight status, radar data, and more. It is built using Laravel/PHP for the backend, SQLite for the database, and Vue.js for the frontend.
+This project is an institutional portal developed for an air traffic control unit, including a control tower and a radar approach control module. The portal simulates real-time information and statistics about air traffic, flight status, radar data, and more. It is built using Laravel/PHP for the backend, MySQL for the database, and Vue.js for the frontend.
 
 ## History
 
@@ -28,7 +28,7 @@ In this versions, I decided to add the following:
 
 Originally, the project was **developed in 2003** using PHP, MySQL, and JavaScript. However, I have decided to update the project to use the following technologies:
 
--   **Backend:** Laravel/PHP, SQLite
+-   **Backend:** Laravel/PHP, MySQL
 -   **Frontend:** Vue.js, Vuex
 -   **Authentication:** Laravel Passport
 -   **Data Mocking:** Faker PHP library
@@ -38,14 +38,25 @@ Originally, the project was **developed in 2003** using PHP, MySQL, and JavaScri
 ## Installation and Setup
 
 1. Clone the repository: `git clone https://github.com/your-username/air-traffic-control-portal.git`
-2. Set up the backend:
-    - Install dependencies: `composer install`
-    - Set up the `.env` file with database credentials.
-    - Run migrations: `php artisan migrate`
-    - Start the backend server: `php artisan serve`
-3. Set up the frontend:
+2. Install dependencies
+    - composer install
+3. Set configurations
+    - cp .env.example .env
+4. Create a database and update .env file
+5. Generate encryption key
+    - php artisan key:generate
+6. Create database structure
+    - **php artisan migrate:fresh --seed**
+7. Install passport
+    - **php artisan passport:install --force**
+8. Regenerate swagger documentation
+    - **php artisan l5-swagger:generate**
+9. Refresh cache and routes
+    - **php artisan optimize**
+10. Set up the frontend:
     - Install dependencies: `npm install`
-4. Access the application at `http://localhost:8080` in your web browser.
+    - Run the development server: `npm run dev`
+11. Access the application at `http://localhost` or the appropriate URL in your web browser.
 
 ## Usage
 

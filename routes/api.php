@@ -1,7 +1,6 @@
 <?php
-
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\api\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('register', [RegisterController::class, 'register']);
+Route::post('login', [RegisterController::class, 'login']);
+Route::post('logout', [RegisterController::class, 'logout']);
+Route::post('refresh', [RegisterController::class, 'refresh']);
+
+Route::get('unprotected', function(){
+    return response()->json(['message' => 'This is an unprotected route']);
+});
+
+Route::middleware('auth:api')->group(function(){
+    Route::get('protected', function(){
+        return response()->json(['message' => 'This is a protected route']);
+    });
 });
