@@ -29,15 +29,15 @@ In this versions, I decided to add the following:
 Originally, the project was **developed in 2003** using PHP, MySQL, and JavaScript. However, I have decided to update the project to use the following technologies:
 
 -   **Backend:** Laravel/PHP, MySQL
--   **Frontend:** Vue.js, Vuex
+-   **Frontend:** Vue.js, Pina
 -   **Authentication:** Laravel Passport
 -   **Data Mocking:** Faker PHP library
 -   **Charts and Graphs:** Chart.js
--   **UI Framework:** Bootstrap or Tailwind CSS
+-   **UI Framework:** Tailwind CSS
 
 ## Installation and Setup
 
-1. Clone the repository: `git clone https://github.com/your-username/air-traffic-control-portal.git`
+1. Clone the repository: `git clone https://github.com/gezielcarvalho/air-space-control-website.git`
 2. Install dependencies
     - composer install
 3. Set configurations
@@ -67,7 +67,7 @@ Originally, the project was **developed in 2003** using PHP, MySQL, and JavaScri
 
 ## Documentation
 
-Detailed documentation on setting up and running the project, API endpoints, authentication mechanisms, and more can be found in the `/docs` folder.
+Detailed documentation on setting up and running the project, API endpoints, authentication mechanisms, and more can be found in the [Wiki Pages](https://github.com/gezielcarvalho/air-space-control-website/wiki) of this repository.
 
 ## References
 
