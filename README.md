@@ -76,6 +76,7 @@ Detailed documentation on setting up and running the project, API endpoints, aut
 3. [Vue 3 in Laravel 10 with Vite](https://medium.com/@DevMahmoudAdel/how-to-install-vue-3-in-laravel-10-with-vite-5c7749afd29c)
 4. [Tailwind Vite and Laravel](https://chipperci.com/news/vite-tailwind-laravel)
 5. [Passport API Authentication](https://laravel.com/docs/10.x/passport)
+6. [Time Zones](https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations)
 
 ## Contributing
 

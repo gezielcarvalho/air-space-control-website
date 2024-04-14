@@ -1,0 +1,158 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Air Space Control Website",
+        "description": "Air Space Control Website Documentation",
+        "contact": {
+            "name": "Geziel Carvalho",
+            "email": "geziel.natal@gmail.com"
+        },
+        "version": "2.0"
+    },
+    "servers": [
+        {
+            "url": "http://air-space-control-website.test/",
+            "description": "API local server (check .env file for the APP_URL)"
+        },
+        {
+            "url": "http://air-space-control-website.test/",
+            "description": "API Staging Server"
+        }
+    ],
+    "paths": {
+        "/api/register": {
+            "post": {
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Register a new user",
+                "operationId": "c859b69d08429d7c7c943a47b7f97339",
+                "requestBody": {
+                    "description": "User registration data",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password",
+                                    "c_password",
+                                    "name"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "user@example.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "password"
+                                    },
+                                    "c_password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "password"
+                                    },
+                                    "name": {
+                                        "type": "string",
+                                        "example": "John Doe"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "User registered successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "properties": {
+                                                "token": {
+                                                    "type": "string",
+                                                    "example": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ2ODVmMjFjN2RhZjRlODllYzI3MzM2NzZjYWEwZGZkMjZlMjA1ZTYzZTMzMDA2YWE1NWRlZWM2ZjlmMjg3ZjU0Mjk1OWQ3OGJhZmEwNTYyIn0.eyJhdWQiOiIxIiwianRpIjoiZDY4NWYyMWM3ZGFmNGU4OWVjMjczMzY3NmNhYTBkZmQyNmUyMDVlNjNlMzMwMDZhNTVkZWVjNmY5ZjI4N2Y1NDI5NTlkNzhiYWZhMDU2MiIsImlhdCI6MTYyNzg0MTE5NywiZXhwIjoxNjI3ODQ0Nzk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.eNIB3E1qvhLuZaHdpfsGKhB_nYhlnszVI7mwW8iHtF3uFq_dZhB2gQODDklN5hokHccW1rIcFskBxU4G5PJ-h4JWvTc4yyDyd-1S--L0bMDtWlb4QYog7oP-CXZ7vYltd6Kvmb_GpvSHP9h8zq6j-z5_pRaZaF8V6lJg3Jkp5FKot-ovW7mRlwveK4GKuk0i6b1I49XZ6OQdowv3sfq3Nfw3h3IP7oTXQ4nYkLqWdOTGfKl0RYd-UPMStmZf3JiW22qGYB7G66C99jAdgLKgGnFpLYptl1c6cb11cEKZJJQIenXpYqu0Cq-Nv9QQw0ueEusHosn-vJXdA"
+                                                },
+                                                "name": {
+                                                    "type": "string",
+                                                    "example": "John Doe"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Validation error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "properties": {
+                                                "email": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "example": "The email field is required"
+                                                    }
+                                                },
+                                                "password": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "example": "The password field is required"
+                                                    }
+                                                },
+                                                "c_password": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "example": "The c_password field is required"
+                                                    }
+                                                },
+                                                "name": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "example": "The name field is required"
+                                                    }
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Authentication",
+            "description": "Authentication endpoints"
+        }
+    ]
+}
