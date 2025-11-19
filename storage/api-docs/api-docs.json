@@ -11,7 +11,7 @@
     },
     "servers": [
         {
-            "url": "http://air-space-control-website.test/",
+            "url": "http://localhost:8080",
             "description": "API local server (check .env file for the APP_URL)"
         },
         {
