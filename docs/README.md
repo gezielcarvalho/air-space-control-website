@@ -1,11 +1,14 @@
 # Air Space Control Website - Documentation
 
+> **Current-state note:** the existing overview, architecture, API, and deployment documents preserve the intended rewrite vision and historical context. They should not be read as proof that the described air-traffic-control modules are implemented. See [current-state/README.md](current-state/README.md) for the repository as it exists today.
+
 Welcome to the Air Space Control Website documentation. This comprehensive guide will help you understand, install, configure, and deploy the application.
 
 ## 📚 Documentation Index
 
 ### Getting Started
 
+-   **[Current implementation](current-state/README.md)** - Verified current source scope and portfolio status
 -   **[Overview](overview.md)** - Learn about the project, its background, features, and technology stack
 -   **[Installation](installation.md)** - Step-by-step installation guide for local development
 
